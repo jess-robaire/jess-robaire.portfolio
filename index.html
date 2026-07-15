@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jessa Sib-at | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header>
+    <div class="nav-container">
+      <a href="#home" class="logo-circle">JS</a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section id="home" class="hero section-container">
+    <div class="hero-text">
+      <span class="badge">IT STUDENT · LORMA COLLEGES</span>
+      <h1>Jessa <span>Sib-at</span></h1>
+      <h3 class="hero-role">Aspiring Web Developer</h3>
+      <p class="hero-desc">Building my path in web development, one line of code at a time.</p>
+      <div class="hero-buttons">
+        <a href="#projects" class="btn btn-primary">View My Projects</a>
+        <a href="#contact" class="btn btn-outline">Get In Touch</a>
+      </div>
+      <div class="hero-contact-info">
+        <p><span class="icon">✉️</span> jhessie.m.si@gmail.com</p>
+        <p><span class="icon">📞</span> 09500187094</p>
+        <p><span class="icon">📍</span> San Fernando, La Union</p>
+      </div>
+    </div>
+
+    <div class="hero-image-wrapper">
+      <div class="photo-frame">
+        <img src="profile.png" alt="Jessa Sib-at">
+
+        <div class="floating-badge top-right">
+          <span class="small-text-light">BS Information</span><br>
+          <strong>Technology</strong>
+        </div>
+
+        <div class="floating-badge bottom-left">
+          <span class="small-text-pink">Currently studying</span><br>
+          <strong class="dark-text">Web Development</strong>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="section-container text-center">
+    <p class="section-subtitle">GET TO KNOW ME</p>
+    <h2 class="section-title">About Me</h2>
+    <div class="divider"></div>
+    <p class="about-text">
+      Hi! I'm Jessa, a first-year IT student passionate about web development. I am currently learning the fundamentals
+      of HTML, CSS, and JavaScript and enjoy building things for the web. I'm detail-oriented, a fast learner, and
+      looking forward to growing as a web developer.
+    </p>
+  </section>
+
+  <section id="skills" class="section-container bg-light text-center">
+    <p class="section-subtitle">WHAT I KNOW</p>
+    <h2 class="section-title">Skills & Tools</h2>
+    <div class="divider"></div>
+
+    <div class="skills-grid">
+      <div class="skill-box">
+        <h3 class="box-title">&lt;/&gt; Technical Skills</h3>
+        <div id="tech-skills-list"></div>
+      </div>
+      <div class="skill-box">
+        <h3 class="box-title">☆ Soft Skills</h3>
+        <div id="soft-skills-list" class="tags-container"></div>
+        <div class="quote-box">
+          "Every expert was once a beginner. I'm building strong foundations now so I can create impactful web
+          experiences in the future."
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="section-container text-center">
+    <p class="section-subtitle">WHAT I'VE BUILT</p>
+    <h2 class="section-title">My Projects</h2>
+    <div class="divider"></div>
+    <p class="section-desc">Each project includes a live link or interactive demo.</p>
+    <div id="projects-grid" class="projects-grid"></div>
+  </section>
+
+  <section id="experience" class="section-container bg-light text-center">
+    <p class="section-subtitle">MY JOURNEY</p>
+    <h2 class="section-title">Education & Experience</h2>
+    <div class="divider"></div>
+
+    <div class="experience-grid">
+      <div>
+        <h3 class="column-title">🎓 Education</h3>
+        <div id="education-list"></div>
+      </div>
+      <div>
+        <h3 class="column-title">💼 Work Experience</h3>
+        <div id="work-list"></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section-container text-center">
+    <p class="section-subtitle">SAY HELLO</p>
+    <h2 class="section-title">Get In Touch</h2>
+    <div class="divider"></div>
+
+    <div class="contact-centered">
+      <p class="contact-intro">I'm always open to connecting with fellow students and developers. Whether you have a
+        question, want to collaborate on a project, or just want to say hi. Feel free to reach out!</p>
+
+      <div class="contact-cards-container">
+        <div class="contact-card">
+          <span class="icon">✉️</span>
+          <div>
+            <strong>EMAIL</strong><br>
+            jhessie.m.si@gmail.com
+          </div>
+        </div>
+        <div class="contact-card">
+          <span class="icon">📞</span>
+          <div>
+            <strong>PHONE</strong><br>
+            09500187094
+          </div>
+        </div>
+        <div class="contact-card">
+          <span class="icon">📍</span>
+          <div>
+            <strong>LOCATION</strong><br>
+            San Fernando, La Union
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div id="project-modal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn">&times;</span>
+      <h3 id="modal-title" style="color: #7a1538; margin-bottom: 5px;">Project Title</h3>
+      <p id="modal-desc" style="font-size: 14px; margin-bottom: 20px;">Project Description</p>
+
+      <div id="calculator-ui" class="calculator-container">
+        <input type="text" id="calc-display" disabled value="0">
+        <div class="calc-buttons">
+          <button class="calc-btn clear" onclick="clearCalc()">C</button>
+          <button class="calc-btn op" onclick="addCalc('/')">/</button>
+          <button class="calc-btn op" onclick="addCalc('*')">*</button>
+          <button class="calc-btn op" onclick="addCalc('-')">-</button>
+          <button class="calc-btn" onclick="addCalc('7')">7</button>
+          <button class="calc-btn" onclick="addCalc('8')">8</button>
+          <button class="calc-btn" onclick="addCalc('9')">9</button>
+          <button class="calc-btn op" onclick="addCalc('+')">+</button>
+          <button class="calc-btn" onclick="addCalc('4')">4</button>
+          <button class="calc-btn" onclick="addCalc('5')">5</button>
+          <button class="calc-btn" onclick="addCalc('6')">6</button>
+          <button class="calc-btn equals" onclick="calculateResult()">=</button>
+          <button class="calc-btn" onclick="addCalc('1')">1</button>
+          <button class="calc-btn" onclick="addCalc('2')">2</button>
+          <button class="calc-btn" onclick="addCalc('3')">3</button>
+          <button class="calc-btn" onclick="addCalc('0')" style="grid-column: span 3;">0</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-left">
+        <div class="logo-circle footer-logo">JS</div>
+      </div>
+
+      <div class="footer-center">
+        <p>&copy; 2026 Jessa Sib-at. All Rights Reserved.</p>
+      </div>
+
+      <div class="footer-right"></div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+
+</html>

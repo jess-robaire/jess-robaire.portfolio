@@ -1,0 +1,71 @@
+{
+  "technicalSkills": [
+    { "name": "HTML5", "level": "70%" },
+    { "name": "CSS3 & Flexbox/Grid", "level": "65%" },
+    { "name": "JavaScript (Basics)", "level": "50%" },
+    { "name": "Java ", "level": "58%" },
+    { "name": "VS Code", "level": "75%" }
+  ],
+  "softSkills": [
+    "Quick Learner & Adaptable",
+    "Strong Research Skills",
+    "Detail-Oriented",
+    "Effective Team Collaborator",
+    "Problem-Solving Mindset"
+  ],
+  "projects": [
+    {
+      "id": "portfolio",
+      "title": "Personal Portfolio Website",
+      "description": "A fully responsive personal portfolio designed to showcase my journey as an aspiring IT professional , demonstrating a clean separation of data and UI design.",
+      "tags": ["HTML", "CSS", "JavaScript", "JSON"],
+      "actionType": "scroll-top",
+      "link": "#"
+    },
+    {
+      "id": "calculator",
+      "title": "Simple Calculator App",
+      "description": "A functional calculator built with  HTML, CSS, and JavaScript. Handles basic arithmetic operations with a clean UI.",
+      "tags": ["HTML", "CSS", "JavaScript"],
+      "actionType": "modal",
+      "link": "#"
+    },
+    {
+      "id": "odysseus",
+      "title": "Odysseus Airlines Mockup",
+      "description": "A landing page mockup designed for a local airline project. Built with a focus on clean typography and visual hierarchy.",
+      "tags": ["HTML", "CSS", "Design"],
+      "actionType": "external",
+      "link": "https://www.figma.com/proto/mGVkMP5BQNS0QVs7OETwK4/Odysseus?node-id=814-1043&starting-point-node-id=41%3A218" 
+    }
+  ],
+  "education": [
+    {
+      "title": "Bachelor of Science in Information Technology",
+      "place": "Lorma Colleges - San Fernando, La Union",
+      "date": "2025 - Present",
+      "description": "Currently studying IT fundamentals with a focus on web development, programming logic, and computer systems."
+    },
+
+       {
+      "title": "Bachelor of Science in Development Communication",
+      "place": "Benguet State University - La Trinidad, Benguet",
+      "date": "2021 - 2022",
+      "description": "Trained in crafting clear messaging for diverse audiences and understanding the social impact of technology."
+    }
+  ],
+  "experience": [
+    {
+      "title": "Customer Service Representative",
+      "place": "Concentrix",
+      "date": "October 2022 - February 2024",
+      "description": "Handled inbound and outbound calls for a major retail account. This role strengthened my communication and problem-solving skills."
+    },
+    {
+      "title": "Real Estate Virtual Assistant",
+      "place": "Vertex Virtual Solutions",
+      "date": "July 2020 – September 2021",
+      "description": "Managed and updated property listings across multiple platforms, ensuring accuracy in descriptions, pricing, and availability. Acted as the primary point of contact for incoming leads using Google Phone and email, effectively filtering inquiries and scheduling appointments for agents. Streamlined administrative tasks by organizing digital files and client contracts within Google Drive, improving team accessibility."
+    }
+  ]
+}
